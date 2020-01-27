@@ -1,0 +1,10 @@
+/* 
+    Created on : 27 Jan 2020, 15:54:00
+    Author     : Tom
+*/
+
+
+/* little bodge to reduce image size */
+#navbar > div > div > a > img {
+	width: 245px;
+}
