@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2020-01-21 12:15:48
+<?php /* Smarty version 2.6.31, created on 2020-01-23 17:45:57
          compiled from CRM/common/drupal.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'crmScope', 'CRM/common/drupal.tpl', 1, false),)), $this); ?>

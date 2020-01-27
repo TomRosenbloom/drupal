@@ -1,0 +1,26 @@
+Jan 23 16:24:14  [info] Running task: Cleanup old files
+
+Jan 23 16:24:15  [info] Running task: Checking extensions
+
+Jan 23 16:24:16  [info] Running task: Begin Upgrade to 5.19.2
+
+Jan 23 16:24:16  [info] Running task: Upgrade DB to 5.19.2
+
+Jan 23 16:24:17  [info] Running task: Finish Upgrade DB to 5.19.2
+
+Jan 23 17:43:10  [info] Running task: Cleanup old files
+
+Jan 23 17:43:10  [info] Running task: Checking extensions
+
+Jan 23 17:43:10  [info] Running task: Begin Upgrade to 5.19.3
+
+Jan 23 17:43:10  [info] Running task: Upgrade DB to 5.19.3
+
+Jan 23 17:43:10  [info] Running task: Finish Upgrade DB to 5.19.3
+
+Jan 23 17:43:18  [info] Running task: Begin Upgrade to 5.19.4
+
+Jan 23 17:43:18  [info] Running task: Upgrade DB to 5.19.4
+
+Jan 23 17:43:18  [info] Running task: Finish Upgrade DB to 5.19.4
+
