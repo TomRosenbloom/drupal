@@ -20,8 +20,8 @@
  *
  * @ingroup theme_functions
  */
-function bootstrap_sub_theme_menu_tree(array &$variables) {
-  return '<ul class="menu nav navbar-nav">' . $variables['tree'] . '</ul>';
+function bootstrap_menu_tree(array &$variables) {
+  return '<ul class="menu nav">' . $variables['tree'] . '</ul>';
 }
 
 /**
@@ -34,7 +34,7 @@ function bootstrap_sub_theme_menu_tree(array &$variables) {
  * @return string
  *   The constructed HTML.
  */
-function bootstrap_sub_theme_menu_tree__primary(array &$variables) {
+function bootstrap_menu_tree__primary(array &$variables) {
   return '<ul class="menu nav navbar-nav">' . $variables['tree'] . '</ul>';
 }
 
@@ -48,7 +48,7 @@ function bootstrap_sub_theme_menu_tree__primary(array &$variables) {
  * @return string
  *   The constructed HTML.
  */
-function bootstrap_sub_theme_menu_tree__secondary(array &$variables) {
+function bootstrap_menu_tree__secondary(array &$variables) {
   return '<ul class="menu nav navbar-nav secondary">' . $variables['tree'] . '</ul>';
 }
 
@@ -62,7 +62,7 @@ function bootstrap_sub_theme_menu_tree__secondary(array &$variables) {
  * @return string
  *   The constructed HTML.
  */
-function bootstrap_sub_theme_menu_tree__book_toc(array &$variables) {
+function bootstrap_menu_tree__book_toc(array &$variables) {
   $output = '<div class="book-toc btn-group pull-right">';
   $output .= '  <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">';
   $output .= t('!icon Outline !caret', array(
@@ -85,6 +85,6 @@ function bootstrap_sub_theme_menu_tree__book_toc(array &$variables) {
  * @return string
  *   The constructed HTML.
  */
-function bootstrap_sub_theme_menu_tree__book_toc__sub_menu(array &$variables) {
+function bootstrap_menu_tree__book_toc__sub_menu(array &$variables) {
   return '<ul class="dropdown-menu" role="menu">' . $variables['tree'] . '</ul>';
 }
