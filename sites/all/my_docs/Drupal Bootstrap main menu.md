@@ -16,14 +16,21 @@ To get rid of the title you have to find the menu in Blocks then configure and m
 
 This is basically ~~hopeless~~ very difficult to figure out. I can see why Circle hard-coded the main nav for bootstrap. Seems like the bootstrap theme injects html on the menu but misses a crucial class i.e. you need the ul to have class navbar-nav and this isn't added. 
 
-Need to make Bootstrap use not block.tpl.php but something else - maybe...
+Need to make Bootstrap use not block.tpl.php but something else - maybe... (because we need to keep a general block template, and create a new one for a specifically navigation block) 
 
 Where is it defined what template is called?
 
-Wait - I'm getting somewhere: created block--navigation.tpl.php and that is getting picked up...
+Wait - I'm getting somewhere: created block--navigation.tpl.php and that is getting picked up...(but, looking at this later, there is no difference between block and block--navigation... indeed, so *neither* of these is needed in fact - the thing that fixed the problem was simply the use of menu-tree.func as per below)
 
 Success! In the Bootstrap theme we have /menu/menu-tree.func.php which defines how menus are constructed. I have to make a local copy in my subtheme and then rename the functions according to the subtheme name. There are three functions for menus and for some reason it's the first one bootstrap_menu_tree() that is being used and not either of the other two bootstrap_menu_tree\_\_primary() or bootstrap_menu_tree\_\_secondary(). For some reason that first function wasn't adding the navbar-nav class. So I added that class and then it works, but I do still need to understand when each one is invoked and why...
+
+I'm a bit confused about the status/purpose of primary and secondary menu. The menus that I have defined via the UI are in $variables\['page']['navigation'], eg $variables\['page']\['navigation']['system\_\_main-menu'], but not in $variables['main_menu']. So why not, and where does the 'system\_\_' prefix come from?
+
+
+
+
 
 
 
 As a side issue, there is a behaviour of this menu that I don't like i.e. you only get the dropdown on click and  so that prevents you having a 'home' page for the menu category - if you do have one then you have to click twice to get the drop down, which is no good at all. This is also how it behaves in the Voscur site of course...
+

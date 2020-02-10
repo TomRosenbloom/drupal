@@ -96,7 +96,7 @@
         </button>
       <?php endif; ?>
     </div>
-
+<?php //echo "<pre>"; var_dump($page['navigation']); echo "</pre>"; ?>
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
